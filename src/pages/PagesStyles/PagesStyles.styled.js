@@ -45,7 +45,7 @@ export const HomeStylesContainer = styled.div`
   }
   .button {
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 20%;
     transform: translate(-50%, -50%);
     z-index: 100;
