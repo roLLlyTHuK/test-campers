@@ -18,7 +18,7 @@ export const FiltersFormBox = styled.div`
     padding-left: 44px;
     border: none;
     border-radius: 10px;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
