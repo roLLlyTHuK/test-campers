@@ -118,6 +118,8 @@ export const CamperCardBox = styled.div`
     gap: 8px;
     padding: 12px 18px;
     text-transform: capitalize;
+    background-color: #f2f4f7;
+    border-radius: 100px;
   }
 
   .card-benefits > img {
