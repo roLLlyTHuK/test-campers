@@ -1,4 +1,4 @@
-import{s as t}from"./index-8e5fe75d.js";const o=t.div`
+import{s as t}from"./index-2ee9a63f.js";const o=t.div`
   position: relative;
   display: flex;
   flex-direction: row;
@@ -41,7 +41,7 @@ import{s as t}from"./index-8e5fe75d.js";const o=t.div`
   }
   .button {
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 20%;
     transform: translate(-50%, -50%);
     z-index: 100;
