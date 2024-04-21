@@ -1,9 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const LoaderWrapper = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -136,7 +137,7 @@ export const LoaderWrapper = styled.div`
     left: -32px;
   }
   .tree .leef2::after {
-    content: "";
+    content: '';
     width: 50%;
     height: 50%;
     position: absolute;
@@ -203,7 +204,7 @@ export const LoaderWrapper = styled.div`
     position: absolute;
   }
   .rooftop::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0px;
     bottom: 0px;
@@ -402,7 +403,7 @@ export const LoaderWrapper = styled.div`
     z-index: 0;
   }
   .back-window .windows-glass-wrap .glass::after {
-    content: "";
+    content: '';
     position: absolute;
     background-color: rgba(71, 197, 255, 0.5);
     width: 100%;
@@ -463,7 +464,7 @@ export const LoaderWrapper = styled.div`
     background-color: #f5f4f1;
   }
   .main-door::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -486,7 +487,7 @@ export const LoaderWrapper = styled.div`
     z-index: 0;
   }
   .main-door .glass::after {
-    content: "";
+    content: '';
     position: absolute;
     background-color: rgba(255, 255, 255, 0.3);
     width: 100%;
@@ -541,7 +542,7 @@ export const LoaderWrapper = styled.div`
     border-radius: 20px;
   }
   .main-door .door-handle::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 50%;
     -webkit-border-radius: 20px;
@@ -720,7 +721,7 @@ export const LoaderWrapper = styled.div`
     border-radius: 50%;
   }
   .wheel-wrap .wheel::after {
-    content: "";
+    content: '';
     top: 1px;
     left: 2px;
     height: 100%;
@@ -750,7 +751,7 @@ export const LoaderWrapper = styled.div`
     animation: wheel 0.4s infinite linear;
   }
   .wheel-wrap .wheel .wheel-outer::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 10px;
     height: 5px;
@@ -779,7 +780,7 @@ export const LoaderWrapper = styled.div`
     padding: 5px 4px;
   }
   .wheel-wrap .wheel .wheel-cup::after {
-    content: "";
+    content: '';
     width: 8px;
     position: absolute;
     left: 41%;
@@ -1767,7 +1768,7 @@ export const LoaderWrapper = styled.div`
     }
   }
   body {
-    font-family: "Muli", sans-serif;
+    font-family: 'Muli', sans-serif;
   }
 
   .footer {
