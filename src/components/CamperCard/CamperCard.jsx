@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { selectFavorites } from "../../store/favorites/selectors";
-import { addFavorite, deleteFavorite } from "../../store/favorites/slice";
-import Modal from "../Modal/Modal";
-import FullInfoCamper from "../FullInfoCamper/FullInfoCamper";
-import Adults from "../../assets/icons/adults.svg";
-import Transmission from "../../assets/icons/transmission.svg";
-import Engine from "../../assets/icons/engine.svg";
-import Kitchen from "../../assets/icons/kitchen.svg";
-import Bed from "../../assets/icons/bed.svg";
-import Ac from "../../assets/icons/ac.svg";
-import MapPin from "../../assets/icons/map-pin.svg";
-import { FaStar } from "react-icons/fa";
-import { CamperCardBox } from "./CamperCard.styled";
-import { reverseLocation } from "../../helpers/reverseLocation";
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectFavorites } from '../../store/favorites/selectors';
+import { addFavorite, deleteFavorite } from '../../store/favorites/slice';
+import Modal from '../Modal/Modal';
+import FullInfoCamper from '../FullInfoCamper/FullInfoCamper';
+import Adults from '../../assets/icons/adults.svg';
+import Transmission from '../../assets/icons/transmission.svg';
+import Engine from '../../assets/icons/engine.svg';
+import Kitchen from '../../assets/icons/kitchen.svg';
+import Bed from '../../assets/icons/bed.svg';
+import Ac from '../../assets/icons/ac.svg';
+import MapPin from '../../assets/icons/map-pin.svg';
+import { FaStar } from 'react-icons/fa';
+import { CamperCardBox } from './CamperCard.styled';
+import { reverseLocation } from '../../helpers/reverseLocation';
 
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const CamperCard = ({ camper }) => {
   const {
@@ -64,9 +64,9 @@ const CamperCard = ({ camper }) => {
               <h1 className="card-price">&#8364;{price.toFixed(2)}</h1>
               <button onClick={toggleFavorite}>
                 {isFavorite ? (
-                  <FavoriteIcon sx={{ color: "red", fontSize: "24px" }} />
+                  <FavoriteIcon sx={{ color: 'red', fontSize: '24px' }} />
                 ) : (
-                  <FavoriteBorderIcon sx={{ fontSize: "24px" }} />
+                  <FavoriteBorderIcon sx={{ fontSize: '24px' }} />
                 )}
               </button>
             </div>
@@ -89,7 +89,7 @@ const CamperCard = ({ camper }) => {
           </div>
           <p className="card-description">{description}</p>
           <ul className="card-benefits">
-            <li style={{ textTransform: "none" }}>
+            <li style={{ textTransform: 'none' }}>
               <span>
                 <img src={Adults} alt="" />
               </span>
@@ -111,9 +111,9 @@ const CamperCard = ({ camper }) => {
               <span>
                 <img src={Kitchen} alt="" />
               </span>
-              {details.kitchen ? "Kitchen" : "No kitchen"}
+              {details.kitchen ? 'Kitchen' : 'No kitchen'}
             </li>
-            <li style={{ textTransform: "none" }}>
+            <li style={{ textTransform: 'none' }}>
               <span>
                 <img src={Bed} alt="" />
               </span>
@@ -123,7 +123,7 @@ const CamperCard = ({ camper }) => {
               <span>
                 <img src={Ac} alt="" />
               </span>
-              {details.airConditioner ? "AC" : "no AC"}
+              {details.airConditioner ? 'AC' : 'no AC'}
             </li>
           </ul>
           <button className="card-button" onClick={openModal}>
@@ -132,16 +132,13 @@ const CamperCard = ({ camper }) => {
         </div>
       </CamperCardBox>
       {isOpenModal && (
-        <Modal
-          closeModal={closeModal}
-          children={
-            <FullInfoCamper
-              camper={camper}
-              closeModal={closeModal}
-              isOpenModal={isOpenModal}
-            />
-          }
-        />
+        <Modal closeModal={closeModal}>
+          <FullInfoCamper
+            camper={camper}
+            closeModal={closeModal}
+            isOpenModal={isOpenModal}
+          />
+        </Modal>
       )}
     </>
   );
