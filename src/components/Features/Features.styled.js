@@ -71,5 +71,6 @@ export const Title = styled.p`
 export const OrderFormBox = styled.div`
   flex: 1;
   border: 1px solid #10182833;
+  border-radius: 10px;
   padding: 24px;
 `;

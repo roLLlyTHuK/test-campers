@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Field, ErrorMessage } from "formik";
-import { FiCalendar } from "react-icons/fi";
+import styled from 'styled-components';
+import { Field, ErrorMessage } from 'formik';
+import { FiCalendar } from 'react-icons/fi';
 
 export const Container = styled.div`
   width: 100%;
@@ -88,11 +88,11 @@ export const StyledButton = styled.button`
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
   outline: none;
 
   &:hover {
     background-color: ${(props) =>
-      props.disabled ? " var(--color-red)" : "#D84343"};
+      props.disabled ? ' var(--color-red)' : '#D84343'};
   }
 `;
