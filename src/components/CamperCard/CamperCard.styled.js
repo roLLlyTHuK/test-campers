@@ -52,6 +52,7 @@ export const CamperCardBox = styled.div`
       border: none;
       width: 32px;
       height: 32px;
+      background-color: transparent;
     }
   }
 
