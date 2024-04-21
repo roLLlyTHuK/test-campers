@@ -1,9 +1,9 @@
 {
-  "name": "react_vite",
+  "name": "test-campers",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://rolllythuk.github.io/test-campers",
+  "homepage": "https://rolllythuk.github.io/test-campers/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
