@@ -1,10 +1,11 @@
-import React from "react";
-import Wrapper from "../components/Wrapper/Wrapper";
-import { selectFavorites } from "../store/favorites/selectors";
-import { useSelector } from "react-redux";
-import CampersGallery from "../components/CampersGallery/CampersGallery";
-import { PagesStylesContainer } from "./PagesStyles/PagesStyles.styled";
-import OrderForm from "../components/OrderForm/OrderForm";
+import React from 'react';
+import Wrapper from '../components/Wrapper/Wrapper';
+import { selectFavorites } from '../store/favorites/selectors';
+import { useSelector } from 'react-redux';
+import CampersGallery from '../components/CampersGallery/CampersGallery';
+import { PagesStylesContainer } from './PagesStyles/PagesStyles.styled';
+import OrderForm from '../components/OrderForm/OrderForm';
+import ScrollToTopButton from '../components/ScrollToTopButton/ScrollToTopButton';
 
 const FavoritesPage = () => {
   const favoritesCampers = useSelector(selectFavorites);
@@ -19,6 +20,7 @@ const FavoritesPage = () => {
         ) : (
           <h2>You haven't added any cars to your favorites</h2>
         )}
+        <ScrollToTopButton />
       </PagesStylesContainer>
     </Wrapper>
   );
