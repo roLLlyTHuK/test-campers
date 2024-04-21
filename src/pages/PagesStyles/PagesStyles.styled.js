@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const PagesStylesContainer = styled.div`
   position: relative;
@@ -16,23 +16,37 @@ export const HomeStylesContainer = styled.div`
   margin: 0 auto;
   max-width: 1440px;
 
-  h1 {
+  .text {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 40%;
     transform: translate(-50%, -50%);
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    pointer-events: none;
+  }
+  .text > h1 {
     color: var(--color-yellow);
     font-size: 64px;
     font-weight: 600;
     line-height: 72px;
-    text-align: center;
-    pointer-events: none;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  .text > p {
+    color: var(--color-yellow);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
   }
   .button {
     position: absolute;
-    top: 70%;
-    left: 50%;
+    top: 60%;
+    left: 20%;
     transform: translate(-50%, -50%);
     z-index: 100;
     color: var(--color-white);
@@ -63,7 +77,9 @@ export const Slider = styled.div`
     background-position: center center;
     opacity: 0.25;
     width: 30%;
-    transition: width 0.8s ease, opacity 0.5s ease;
+    transition:
+      width 0.8s ease,
+      opacity 0.5s ease;
     &:hover {
       width: 200%;
       opacity: 1;
