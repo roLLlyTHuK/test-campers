@@ -30,11 +30,8 @@ export const CamperCardBox = styled.div`
   .card-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
     width: 526px;
     height: 310px;
-    align-items: flex-start;
   }
 
   .card-title {
@@ -138,7 +135,7 @@ export const CamperCardBox = styled.div`
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.005em;
-    text-align: left;
+    text-align: center;
     color: var(--color-white);
   }
 
