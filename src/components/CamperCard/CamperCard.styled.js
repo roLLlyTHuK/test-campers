@@ -74,6 +74,7 @@ export const CamperCardBox = styled.div`
     border: none;
     padding: 0;
     font-size: 16px;
+    background-color: #fff;
   }
 
   .card-subtitle > p {

@@ -34,6 +34,7 @@ export const StyledInput = styled(Field)`
   text-align: left;
   outline: none;
   margin-bottom: 14px;
+  background-color: var(--color-white);
 
   &:focus + label {
     transform: translateY(-30px);
@@ -55,6 +56,7 @@ export const StyledTextArea = styled(Field)`
   text-align: left;
   outline: none;
   margin-bottom: 24px;
+  background-color: var(--color-white);
 
   &:focus + label {
     transform: translateY(-30px);

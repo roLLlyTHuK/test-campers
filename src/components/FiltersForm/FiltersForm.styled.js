@@ -24,6 +24,7 @@ export const FiltersFormBox = styled.div`
     line-height: 20px;
     text-align: left;
     outline: none;
+    background-color: var(--color-white);
   }
 
   input[type='checkbox'],

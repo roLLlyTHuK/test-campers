@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const TopSide = styled.div`
   width: 100%;
@@ -31,12 +31,12 @@ export const TopSide = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-
     color: var(--color-black);
     text-decoration: underline;
     border: none;
     padding: 0;
     font-size: 16px;
+    background-color: #fff;
   }
 
   .card-price {
@@ -86,7 +86,7 @@ export const BottomSide = styled.div`
 
   .tab {
     text-transform: none;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -104,7 +104,7 @@ export const ModalContent = styled.div`
   max-height: 80vh;
   transform: translate(-50%, -50%);
   padding: 40px;
-  background-color: var(--color-white);
+  background-color: #fff;
   border-radius: 8px;
   overflow-y: scroll;
 `;

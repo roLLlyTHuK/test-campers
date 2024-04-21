@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ReviewsWrapper = styled.div`
   width: 100%;
@@ -34,6 +34,7 @@ export const ReviewItem = styled.li`
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: var(--color-dark-white);
   }
   .avatar > h1 {
     color: var(--color-red);
