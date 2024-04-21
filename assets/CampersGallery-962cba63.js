@@ -1,4 +1,4 @@
-var Xy=Object.defineProperty;var Zy=(e,n,t)=>n in e?Xy(e,n,{enumerable:!0,configurable:!0,writable:!0,value:t}):e[n]=t;var B=(e,n,t)=>(Zy(e,typeof n!="symbol"?n+"":n,t),t);import{G as yl,s as Oe,r as k,c as vl,j as S,d as Xa,R as Pa,e as T,f as Jy,h as $r,m as ev,i as tv,k as rv,l as Er,a as nv,u as ov,n as av,o as iv}from"./index-4c291cb6.js";const Lf="/test-campers/assets/transmission-a622caa4.svg",Bf="/test-campers/assets/kitchen-ed5746a3.svg",Yf="/test-campers/assets/ac-ae70ced2.svg";function sv(e){return yl({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"rect",attr:{x:"3",y:"4",width:"18",height:"18",rx:"2",ry:"2"},child:[]},{tag:"line",attr:{x1:"16",y1:"2",x2:"16",y2:"6"},child:[]},{tag:"line",attr:{x1:"8",y1:"2",x2:"8",y2:"6"},child:[]},{tag:"line",attr:{x1:"3",y1:"10",x2:"21",y2:"10"},child:[]}]})(e)}function vA(e){return yl({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"},child:[]},{tag:"circle",attr:{cx:"12",cy:"10",r:"3"},child:[]}]})(e)}const lv=e=>e.favorites.favorites,cv=Oe.div`
+var Xy=Object.defineProperty;var Zy=(e,n,t)=>n in e?Xy(e,n,{enumerable:!0,configurable:!0,writable:!0,value:t}):e[n]=t;var B=(e,n,t)=>(Zy(e,typeof n!="symbol"?n+"":n,t),t);import{G as yl,s as Oe,r as k,c as vl,j as S,d as Xa,R as Pa,e as T,f as Jy,h as $r,m as ev,i as tv,k as rv,l as Er,a as nv,u as ov,n as av,o as iv}from"./index-2683a4b5.js";const Lf="/test-campers/assets/transmission-a622caa4.svg",Bf="/test-campers/assets/kitchen-ed5746a3.svg",Yf="/test-campers/assets/ac-ae70ced2.svg";function sv(e){return yl({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"rect",attr:{x:"3",y:"4",width:"18",height:"18",rx:"2",ry:"2"},child:[]},{tag:"line",attr:{x1:"16",y1:"2",x2:"16",y2:"6"},child:[]},{tag:"line",attr:{x1:"8",y1:"2",x2:"8",y2:"6"},child:[]},{tag:"line",attr:{x1:"3",y1:"10",x2:"21",y2:"10"},child:[]}]})(e)}function vA(e){return yl({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"},child:[]},{tag:"circle",attr:{cx:"12",cy:"10",r:"3"},child:[]}]})(e)}const lv=e=>e.favorites.favorites,cv=Oe.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -193,6 +193,7 @@ https://sweetalert2.github.io/#ajax-request`),Wy(p),typeof p.title=="string"&&(p
   text-align: left;
   outline: none;
   margin-bottom: 14px;
+  background-color: var(--color-white);
 
   &:focus + label {
     transform: translateY(-30px);
@@ -212,6 +213,7 @@ https://sweetalert2.github.io/#ajax-request`),Wy(p),typeof p.title=="string"&&(p
   text-align: left;
   outline: none;
   margin-bottom: 24px;
+  background-color: var(--color-white);
 
   &:focus + label {
     transform: translateY(-30px);
@@ -275,6 +277,7 @@ https://sweetalert2.github.io/#ajax-request`),Wy(p),typeof p.title=="string"&&(p
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: var(--color-dark-white);
   }
   .avatar > h1 {
     color: var(--color-red);
@@ -321,12 +324,12 @@ https://sweetalert2.github.io/#ajax-request`),Wy(p),typeof p.title=="string"&&(p
     display: flex;
     flex-direction: row;
     align-items: center;
-
     color: var(--color-black);
     text-decoration: underline;
     border: none;
     padding: 0;
     font-size: 16px;
+    background-color: #fff;
   }
 
   .card-price {
@@ -370,7 +373,7 @@ https://sweetalert2.github.io/#ajax-request`),Wy(p),typeof p.title=="string"&&(p
 
   .tab {
     text-transform: none;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -386,7 +389,7 @@ https://sweetalert2.github.io/#ajax-request`),Wy(p),typeof p.title=="string"&&(p
   max-height: 80vh;
   transform: translate(-50%, -50%);
   padding: 40px;
-  background-color: var(--color-white);
+  background-color: #fff;
   border-radius: 8px;
   overflow-y: scroll;
 `,k_=Oe.button`
@@ -565,6 +568,7 @@ https://sweetalert2.github.io/#ajax-request`),Wy(p),typeof p.title=="string"&&(p
     border: none;
     padding: 0;
     font-size: 16px;
+    background-color: #fff;
   }
 
   .card-subtitle > p {
