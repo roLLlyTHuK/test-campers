@@ -28,8 +28,13 @@ export const CamperCardBox = styled.div`
   }
 
   .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     width: 526px;
     height: 310px;
+    align-items: flex-start;
   }
 
   .card-title {
