@@ -1,30 +1,30 @@
-import Swal from "sweetalert2";
+import Swal from 'sweetalert2';
 
 export const toastSuccess = (message) => {
   Swal.fire({
-    position: "center",
-    icon: "success",
+    position: 'center',
+    icon: 'success',
     title: message,
     showConfirmButton: true,
     timer: 3000,
-    color: "#407bff",
-    background: "#d7e3ff",
-    iconColor: "#407bff",
-    confirmButtonColor: "#407bff",
+    color: 'var(--color-black)',
+    background: 'var(--color-white)',
+    iconColor: 'green',
+    confirmButtonColor: 'var(--color-red)',
     width: 320,
   });
 };
 
 export const toastError = (message) => {
   Swal.fire({
-    position: "center",
-    icon: "error",
+    position: 'center',
+    icon: 'error',
     title: message,
     showConfirmButton: true,
     timer: 3000,
-    color: "#407bff",
-    background: "#d7e3ff",
-    iconColor: "#ef5050",
-    confirmButtonColor: "#407bff",
+    color: 'var(--color-black)',
+    background: 'var(--color-white)',
+    iconColor: 'var(--color-red)',
+    confirmButtonColor: '#var(--color-red)',
   });
 };
