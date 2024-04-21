@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { FiMapPin } from "react-icons/fi";
+import styled from 'styled-components';
+import { FiMapPin } from 'react-icons/fi';
 
 export const FiltersFormBox = styled.div`
   width: 360px;
@@ -26,16 +26,16 @@ export const FiltersFormBox = styled.div`
     outline: none;
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
+  input[type='checkbox'],
+  input[type='radio'] {
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
   }
 
-  input[type="checkbox"] + label,
-  input[type="radio"] + label {
+  input[type='checkbox'] + label,
+  input[type='radio'] + label {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,20 +62,20 @@ export const FiltersFormBox = styled.div`
     height: 32px;
   }
 
-  input[type="checkbox"]:checked + label,
-  input[type="radio"]:checked + label {
+  input[type='checkbox']:checked + label,
+  input[type='radio']:checked + label {
     border: 1px solid var(--color-red);
   }
 
-  input[type="checkbox"] + label::before,
-  input[type="radio"] + label::before {
+  input[type='checkbox'] + label::before,
+  input[type='radio'] + label::before {
     display: block;
     font-size: 24px;
     line-height: 100px;
   }
 
-  input[type="checkbox"] + label:hover,
-  input[type="radio"] + label:hover {
+  input[type='checkbox'] + label:hover,
+  input[type='radio'] + label:hover {
     background-color: #f4f4f4;
   }
 
@@ -138,7 +138,7 @@ export const Button = styled.button`
   }
 `;
 
-export const CalendarIcon = styled(FiMapPin)`
+export const LocationIcon = styled(FiMapPin)`
   position: absolute;
   width: 20px;
   height: 20px;

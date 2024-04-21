@@ -1,32 +1,33 @@
-import React, { useEffect, useState } from "react";
-import Transmission from "../../assets/icons/transmission.svg";
-import Kitchen from "../../assets/icons/kitchen.svg";
-import Ac from "../../assets/icons/ac.svg";
-import TV from "../../assets/icons/tv.svg";
-import Shower from "../../assets/icons/shower.svg";
-import Van from "../../assets/icons/van.svg";
-import Alcove from "../../assets/icons/alcove.svg";
-import FullIntegrated from "../../assets/icons/fully-integrated.svg";
+import React, { useEffect, useState } from 'react';
+import Transmission from '../../assets/icons/transmission.svg';
+import Kitchen from '../../assets/icons/kitchen.svg';
+import Ac from '../../assets/icons/ac.svg';
+import TV from '../../assets/icons/tv.svg';
+import Shower from '../../assets/icons/shower.svg';
+import Van from '../../assets/icons/van.svg';
+import Alcove from '../../assets/icons/alcove.svg';
+import FullIntegrated from '../../assets/icons/fully-integrated.svg';
 
 import {
   Button,
-  CalendarIcon,
   EquipmentList,
   FiltersFormBox,
+  LocationIcon,
   RadioGroup,
-} from "./FiltersForm.styled";
-import { useDispatch, useSelector } from "react-redux";
-import { selectAllCampers } from "../../store/campers/selectors";
-import { getFullListCampers } from "../../store/campers/operations";
-import { setFilteredCampers } from "../../store/campers/slice";
+} from './FiltersForm.styled';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectAllCampers } from '../../store/campers/selectors';
+import { getFullListCampers } from '../../store/campers/operations';
+import { setFilteredCampers } from '../../store/campers/slice';
 
 const FiltersForm = ({ onFiltersChange }) => {
   const campers = useSelector(selectAllCampers);
+  const [locationInputValue, setLocationInputValue] = useState('');
   const dispatch = useDispatch();
   const [selectedFilters, setSelectedFilters] = useState({
-    location: "",
+    location: '',
     equipment: [],
-    type: "",
+    type: '',
   });
 
   useEffect(() => {
@@ -41,7 +42,7 @@ const FiltersForm = ({ onFiltersChange }) => {
         );
 
         const typeMatch =
-          selectedFilters.type === "" || camper.form === selectedFilters.type;
+          selectedFilters.type === '' || camper.form === selectedFilters.type;
 
         return locationMatch && equipmentMatch && typeMatch;
       });
@@ -55,6 +56,7 @@ const FiltersForm = ({ onFiltersChange }) => {
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
+    setLocationInputValue(value);
     setSelectedFilters({ ...selectedFilters, [name]: value });
   };
 
@@ -78,9 +80,9 @@ const FiltersForm = ({ onFiltersChange }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setSelectedFilters({
-      location: "",
+      location: '',
       equipment: [],
-      type: "",
+      type: '',
     });
   };
 
@@ -94,7 +96,14 @@ const FiltersForm = ({ onFiltersChange }) => {
         <div className="location-filter">
           <p>Location</p>
           <div>
-            <CalendarIcon />
+            <LocationIcon
+              style={{
+                color:
+                  locationInputValue !== ''
+                    ? 'var(--color-black)'
+                    : 'var(--color-light-grey)',
+              }}
+            />
             <input
               type="text"
               name="location"
@@ -115,7 +124,7 @@ const FiltersForm = ({ onFiltersChange }) => {
                 name="airConditioner"
                 id="airConditioner"
                 value="airConditioner"
-                checked={selectedFilters.equipment.includes("airConditioner")}
+                checked={selectedFilters.equipment.includes('airConditioner')}
                 onChange={handleCheckboxChange}
               />
               <label htmlFor="airConditioner">
@@ -129,7 +138,7 @@ const FiltersForm = ({ onFiltersChange }) => {
                 name="transmission"
                 id="transmission"
                 value="transmission"
-                checked={selectedFilters.equipment.includes("transmission")}
+                checked={selectedFilters.equipment.includes('transmission')}
                 onChange={handleCheckboxChange}
               />
               <label htmlFor="transmission">
@@ -143,7 +152,7 @@ const FiltersForm = ({ onFiltersChange }) => {
                 name="kitchen"
                 id="kitchen"
                 value="kitchen"
-                checked={selectedFilters.equipment.includes("kitchen")}
+                checked={selectedFilters.equipment.includes('kitchen')}
                 onChange={handleCheckboxChange}
               />
               <label htmlFor="kitchen">
@@ -157,7 +166,7 @@ const FiltersForm = ({ onFiltersChange }) => {
                 name="TV"
                 id="TV"
                 value="TV"
-                checked={selectedFilters.equipment.includes("TV")}
+                checked={selectedFilters.equipment.includes('TV')}
                 onChange={handleCheckboxChange}
               />
               <label htmlFor="TV">
@@ -171,7 +180,7 @@ const FiltersForm = ({ onFiltersChange }) => {
                 name="shower"
                 id="shower"
                 value="shower"
-                checked={selectedFilters.equipment.includes("shower")}
+                checked={selectedFilters.equipment.includes('shower')}
                 onChange={handleCheckboxChange}
               />
               <label htmlFor="shower">
@@ -190,7 +199,7 @@ const FiltersForm = ({ onFiltersChange }) => {
                 name="type"
                 id="panelTruck"
                 value="panelTruck"
-                checked={selectedFilters.type === "panelTruck"}
+                checked={selectedFilters.type === 'panelTruck'}
                 onChange={handleInputChange}
               />
               <label htmlFor="panelTruck">
@@ -204,7 +213,7 @@ const FiltersForm = ({ onFiltersChange }) => {
                 name="type"
                 id="fullyIntegrated"
                 value="fullyIntegrated"
-                checked={selectedFilters.type === "fullyIntegrated"}
+                checked={selectedFilters.type === 'fullyIntegrated'}
                 onChange={handleInputChange}
               />
               <label htmlFor="fullyIntegrated">
@@ -218,7 +227,7 @@ const FiltersForm = ({ onFiltersChange }) => {
                 name="type"
                 id="alcove"
                 value="alcove"
-                checked={selectedFilters.type === "alcove"}
+                checked={selectedFilters.type === 'alcove'}
                 onChange={handleInputChange}
               />
               <label htmlFor="alcove">
