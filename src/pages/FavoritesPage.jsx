@@ -18,7 +18,7 @@ const FavoritesPage = () => {
         {favoritesCampers.length > 0 ? (
           <CampersGallery campers={favoritesCampers} />
         ) : (
-          <h2>You haven't added any cars to your favorites</h2>
+          <h2>You haven&apos;t added any cars to your favorites</h2>
         )}
         <ScrollToTopButton />
       </PagesStylesContainer>
