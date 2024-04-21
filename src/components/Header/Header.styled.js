@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HeaderBox = styled.div`
   max-width: 1440px;
@@ -22,6 +22,11 @@ export const HeaderBox = styled.div`
   .nav > a {
     text-decoration: none;
     color: var(--color-black);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .nav > a:hover {
+    color: var(--color-red);
   }
 `;
 
