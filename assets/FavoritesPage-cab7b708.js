@@ -1,0 +1,1 @@
+import{u as e,j as s,W as a}from"./index-ec30088b.js";import{s as t,O as o,C as i}from"./CampersGallery-1177b00d.js";import{P as n}from"./PagesStyles.styled-e3f09e7c.js";const c=()=>{const r=e(t);return s.jsx(a,{children:s.jsxs(n,{children:[s.jsx(o,{}),r.length>0?s.jsx(i,{campers:r}):s.jsx("h2",{children:"You haven't added any cars to your favorites"})]})})};export{c as default};
