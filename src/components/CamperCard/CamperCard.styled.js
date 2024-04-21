@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CamperCardBox = styled.div`
   width: 888px;
@@ -66,7 +66,6 @@ export const CamperCardBox = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-
     color: var(--color-black);
     text-decoration: underline;
     border: none;
@@ -95,6 +94,7 @@ export const CamperCardBox = styled.div`
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     margin-bottom: 24px;
+    color: var(--color-grey);
   }
 
   .card-benefits {
