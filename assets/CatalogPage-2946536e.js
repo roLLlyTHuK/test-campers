@@ -1,4 +1,4 @@
-import{s as h,u as m,r as d,a as k,g as C,j as e,b as w,L as j,W as F}from"./index-c91b7046.js";import{F as L,A as q,T as I,K as T,C as V,t as S}from"./CampersGallery-1f62adec.js";import{P as A}from"./PagesStyles.styled-4660d2b6.js";const M="/test-campers/assets/tv-a3af1c79.svg",P="/test-campers/assets/shower-fec19de3.svg",z="/test-campers/assets/van-0b91f168.svg",E="/test-campers/assets/alcove-8cb8fc9f.svg",K="/test-campers/assets/fully-integrated-7c534a1c.svg",N=h.div`
+import{s as h,u as m,r as d,a as k,g as C,j as e,b as w,L as j,W as F}from"./index-e6e11585.js";import{F as L,A as q,T as I,K as T,C as V,t as S}from"./CampersGallery-71963b2f.js";import{P as A}from"./PagesStyles.styled-4eba7762.js";const M="/test-campers/assets/tv-a3af1c79.svg",P="/test-campers/assets/shower-fec19de3.svg",z="/test-campers/assets/van-0b91f168.svg",E="/test-campers/assets/alcove-8cb8fc9f.svg",K="/test-campers/assets/fully-integrated-7c534a1c.svg",N=h.div`
   width: 360px;
   display: flex;
   flex-direction: column;
