@@ -1,29 +1,27 @@
-import {
-  HeaderContainer,
-  Navigation,
-  StyledLink,
-  IconWrapper,
-} from './Header.styled';
-import sprite from 'assets/sprite.svg';
+import React from "react";
+import Wrapper from "../Wrapper/Wrapper";
+import { NavLink } from "react-router-dom";
+import { HeaderBox, LogoBox } from "./Header.styled";
+import { TbCamper } from "react-icons/tb";
 
-export const Header = () => {
-
+const Header = () => {
   return (
-    <HeaderContainer>
-      <Navigation>
-        <StyledLink to="/first">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          First
-        </StyledLink>
-        <StyledLink to="/second">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          Second
-        </StyledLink>
-      </Navigation>
-    </HeaderContainer>
+    <Wrapper>
+      <HeaderBox>
+        <NavLink to="/">
+          <LogoBox>
+            <TbCamper size={64} fill="tomato" stroke="black" />
+            <h2>Camper Rentals</h2>
+          </LogoBox>
+        </NavLink>
+        <nav className="nav">
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/catalog">Catalog</NavLink>
+          <NavLink to="/favorites">Favorites</NavLink>
+        </nav>
+      </HeaderBox>
+    </Wrapper>
   );
 };
+
+export default Header;
